@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Projects</title>
+    <style>
+        summary::-webkit-details-marker {
+            display: none
+        }
+        summary:before {
+            content: "";
+            display: inline-block;
+            width: 50px; 
+            height: 16px; 
+            background-image: url('open.png'); 
+            background-size: contain;
+            background-repeat: no-repeat;
+
+        }
+
+        details[open] summary:before {
+            content: "";
+            display: inline-block;
+            width: 50px;
+            height: 16px; 
+            background-image: url('close.png'); 
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        
+        ul{
+            border-style:solid;
+            border-radius: 10px;
+            border-width: 1px;
+        }
+        li{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .item {
+            margin-left: 20px;
+            width:100px;
+        }
+
+        details summary{
+            display:flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        
+        details[open] summary{
+            top:0px;
+            color: blue;
+        }
+
+        body{
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .top{
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            right: 20px;
+            bottom: 50px;
+        }
+        @media (width < 600px) {
+            details[open] summary{
+                position: sticky;
+                background-color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#" style="color: inherit; text-decoration: none"><img src="top.png" class="top"></a>
+    <h1>Research Projects (since Sept 2012)</h1>
+    <details open name="reqs">
+        <summary>
+            <div>2024</div>
+            <div class="item">19 projects</div>
+            <div>Funding: HK$18.52M</div>
+        </summary>
+            <ul>
+                <li>Development of a Practical Elderly Fall Detection Solution via Non-Intrusive, Low-Cost Sensing (HLCA, 2024-25, HK$0.39M, Chenshu WU)</li>
+                <li>Sensing in 6G Cellular Networks (RGC CRF YCRG, 2024-27, HK$0.94M, Chenshu WU)</li>
+                <li>A Novel Approach to Software Debloating: Improving Security and Performance in Post-Deployment Environments (RGC ECS,2024-27, HK$1.03M, Chenxiong QIAN)</li>
+                <li>Advancing Sampling Methods via Diffusion-Based Monte Carlo (RGC ECS,2024-27, HK$0.83M, Difan ZOU)</li>
+                <li>Arbitrary-Control Backdoor Threats in Federated Learning: Attacks and Defenses (RGC ECS,2024-27, HK$0.93M, Ka-Ho CHOW)</li>
+                <li>Efficient Multi-Task LLM Generative Serving in Heterogeneous Clusters (RGC GRF,2024-27, HK$1.20M, Chuan WU)</li>
+                <li>Achieving High-performance and Reliable Transaction/Analytical Processing in Edge Computing (RGC GRF,2024-27, HK$1.04M, Heming CUI)</li>
+                <li>Dynamic non-prehensile manipulation of cloth fabric using multi-modal planning (RGC GRF,2024-27, HK$1.13M, Jia PAN)</li>
+                <li>New Methods for Large-scale Motion Prediction for Car Accident Avoidance via Adversarial Diffusion Models (RGC GRF,2024-26, HK$0.69M, Ping LUO)</li>
+                <li>Energy-efficient optimal quantum metrology: fundamental limits, protocols, and indefinite causal orders. (RGC GRF,2024-27, HK$0.91M, Yuxiang YANG)</li>
+                <li>Statistical Acoustic Sensing: Theories, Techniques, and Applications (RGC GRF,2024-27, HK$1.04M, Chenshu WU)</li>
+                <li>Towards Next-generation Artificial Auditory System with Brain-inspired Technologies (RGC CRF, 2024-27, HK$0.7M, Dong XU)</li>
+                <li>Empowering Hong Kong Finance with A Quantum Algorithm Platform (RGC RIF, 2024-29, HK$1.29M, Qi ZHAO)</li>
+                <li>Trustworthy Federated Learning Against Model Leakage (Croucher Foundation Start-up, 2024-29, HK$0.5M, Ka-Ho CHOW)</li>                
+                <li>Diamond-based Multi-modal Quantum Sensing of Nanomagnetism (RGC TRS 2024, HK$0.5M, Giulio CHIRIBELLA)</li>          
+                <li>High-performance Collaborative Edge Computing Enabling Smart City Applications: Framework and Methodologies (RGC TRS, 2024-28, HK$2.7M, Chuan WU)</li>
+                <li>Quantum Entangled Subspace and Its Applications (NNSF, 2024-26, HK$0.3M, Qi ZHAO)</li>
+                <li>Quantum-enhanced Metrology (NNSF, 2024-26, HK$2.1M, Yuxiang YANG)</li>
+                <li>Generalization Analysis of Stochastic Optimization Algorithms in Training Neural Network Models (NNSF, 2024-26, HK$0.3M, Difan ZOU)</li>
+            </ul>
+    </details>
+    <details name="reqs">
+        <summary>
+            <div>2023</div>
+            <div class="item">8 projects</div>
+            <div>Funding: HK$5.9M, RMB¥0.15M</div>
+        </summary>
+            <ul>
+                <li>Hamiltonian simulation algorithms with physical inputs and observables (GNSF, 2023-25, HK$0.1M, Qi ZHAO)</li>
+                <li>Self-Supervised Learning for User Behavior Modeling and Representation Learning (CCF-Tencent Rhino-Bird Fund, from 2023, RMB¥0.15M, Chao Huang)</li>
+                <li>Compact ECDSA Signatures for Smaller Blockchain (RGC GRF, 2023-25, HK$0.7M, John Yuen)</li>
+                <li>Decentralized Private and Communication-Efficient Clustered Federated Learning among Self-Motivated Nodes in Byzantine Networks (RGC GRF, 2023-25, HK$1.1M, Hubert Chan)</li>
+                <li>Efficient Distributed GNN Learning over Large Dynamic Graphs (RGC GRF, 2023-25, HK$1.1M, Chuan Wu)</li>
+                <li>Hybrid Neuro-Probabilistic Reasoning for Attribute-Based Verifiable Medical Diagnosis (RGC GRF, 2023-25, HK$1.1M, Yizhou Yu)</li>
+                <li>Multiparameter Non-Markovian Quantum Metrology: from Theory to Quantum Sensor Design (RGC ECS, 2023-25, HK$0.7M, Yuxiang Yang)</li>
+                <li>Stochastic Online Matching Problems Through Expressive Linear Program Formulations (RGC GRF, 2023-25, HK$1.1M, Zhiyi Huang)</li>
+            </ul>
+    </details>
+    <details name="reqs">
+        <summary>
+            <div>2022</div>
+            <div class="item">28 projects</div>
+            <div>Funding: HK$22.78M</div>
+        </summary>
+            <ul>
+                <li>Trustworthy quantum gadgets for secure online communication (RGC RIF, 2022-27, HK$6.8M, Giulio Chiribella)</li>
+                <li>Secure and Incentivized Data Sharing with Enhanced Ownership for Decentralized Networks (RGC RIF, 2022-26, HK$1.1M, Allen Au (Co-PI))</li>
+                <li>A Signal Processing-Deep Learning Co-Design for Practical Deep Wireless Sensing (RGC ECS, 2022-25, HK$1.2M, Chenshu Wu)</li>
+                <li>Automatic Understanding and Generation of Long Descriptive Text (NSFC/RGC, 2022-25, HK$0.9M, Lingpeng Kong)</li>
+                <li>Distributed Protocols for Allocation and Selection Problems among Self-Serving Agents: Fairness, Security, Communication Efficiency (RGC GRF, 2022-25, HK$0.8M, Hubert Chan)</li>
+                <li>he Quantum Information Structure of Spacetime, Second Phase (QISS 2) (JTF, 2022-25, HK$0.8M, Giulio Chiribella)</li>
+                <li>Manipulation of Objects with a Full Body Model with Fingers (RGC GRF, 2022-25, HK$0.7M, Taku Komura)</li>
+                <li>New Deep Learning Approaches for Understanding Human Motions among Cities in the World (RGC GRF, 2022-25, HK$1.0M, Ping Luo)</li>
+                <li>Semi-device-independent cryptographic applications of a single trusted quantum system (RGC GRF, 2022-25, HK$0.8M, R. Ramanathan)</li>
+                <li>ARM Architecture for Bioinformatics (URC Seed, 2022-24, HK$0.06M, Ruibang Luo)</li>
+                <li>Cancer mutation detection using Single Molecule Sequencing (RGC GRF, 2022-24, HK$0.6M, Ruibang Luo)</li>
+                <li>Cross-Modality Contactless Sensing for Multi-Target Interaction and Healthcare (HKU-TCL, 2022-24, HK$1.8M, Chenshu Wu)</li>
+                <li>FaCEE: A Fast Concolic Execution Engine for Fuzz Testing (URC Seed, 2022-24, HK$0.2M, Chenxiong Qian)</li>
+                <li>Foundations for Implicit Type-Directed Computation with Subtyping (RGC GRF, 2022-24, HK$0.8M, Bruno Oliveira)</li>
+                <li>High-Accuracy Low-Cost Ubiquitous Indoor Location System (URC Seed, 2022-24, HK$0.2M, Chenshu Wu)</li>
+                <li>New Frontiers of Lattice-Based Cryptography (RGC GRF, 2022-24, HK$0.7M, Allen Au)</li>
+                <li>Online Correlated Selection: Theory and Applications to Online Algorithms (RGC GRF, 2022-24, HK$0.8M, Zhiyi Huang)</li>
+                <li>Optimization Under Uncertainty (MRPO NSFC, 2022-24, HK$2.5M, Zhiyi Huang)</li>
+                <li>Quantum resource lifting; quantum computing and metrology under the resource theory framework (MRPO GDST, 2022-24, HK$0.1M, Yuxiang Yang)</li>
+                <li>Towards Next-Generation 3D Scene Understanding (URC Seed, 2022-24, HK$0.08M, Hengshuang Zhao)</li>
+                <li>Using generative adversarial networks against noise in near-term quantum computing (URC Seed, 2022-24, HK$0.2M, Yuxiang Yang)</li>
+                <li>Efficient Public Key Encryption against Side-Channels Attacks (URC Seed, 2022-23, HK$0.06M, John Yuen)</li>
+                <li>UTEE: A Secure, Efficient, and Portable Distributed Bigdata Computing System on Heterogeneous Trusted Execution Devices (Faculty-KEA, 2022-23, HK$0.1M, Heming Cui)</li>
+                <li>Motif-Paths: A New Technique for Higher-Order Graph Analytics (URC Seed, 2022, HK$0.07M, Reynold Cheng)</li>
+                <li>New Frontiers of Efficient Attention Mechanisms (URC Seed, 2022, HK$0.07M, Lingpeng Kong)</li>
+                <li>Robotic Excavator for Efficient and Non-destructive Exposure of Archaeological Remains (URC Seed, 2022, HK$0.2M, Jia Pan)</li>
+                <li>Towards a Unified Framework for Scalable and Reliable Structured Knowledge Grounding in Task-oriented Dialogue Systems (URC Seed, 2022, HK$0.07M, Tao Yu)</li>
+                <li>Towards efficient and participant-governed exchange of genetic variants in large-scale population genome (URC Seed, 2022, HK$0.07M, Ruibang Luo)</li>
+            </ul>
+    </details>
+    <details name="reqs">
+        <summary>
+            <div>2021</div>
+            <div class="item">21 projects</div>
+            <div>Funding: HK$18.15M</div>
+        </summary>
+            <ul>
+                <li>Building Platform Technologies for Symbiotic Creativity in Hong Kong (RGC TRS, 2021-26, HK$1.1M, Wenping Wang (Co-PI))</li>
+                <li>Assess Antibiotic Resistome Flows from Pollution Hotspots to Environments and Explore the Control Strategies (RGC TRS, 2021-25, HK$0.8M, Ruibang Luo)</li>
+                <li>Quantum Causal Discovery and the Foundations of Quantum Artificial Intelligence (RGC SRFS, 2021-25, HK$7.8M, Giulio Chiribella)</li>
+                <li>Optimizing Distributed GNN Training on Large Graphs (RGC GRF, 2021-24, HK$1.1M, Chuan Wu)</li>
+                <li>Practical Generic Ring Signature towards the Post-Quantum Era (RGC ECS, 2021-24, HK$0.4M, John Yuen)</li>
+                <li>研发将单分子测序运用于癌症体细胞变异检测的实验方案与算法 (MRPO Shenzhen Fund, 2021-24, HK$0.7M, Ruibang Luo)</li>
+                <li>Animating and Capturing Close Interactions (URC Seed, 2021-23, HK$0.2M, Taku Komura)</li>
+                <li>Device-Independent Random Number Generation and Quantum Key Distribution with Weak Random Seeds (RGC ECS, 2021-23, HK$0.6M, R. Ramanathan)</li>
+                <li>Efficient and Private Distributed Protocols against Byzantine Nodes in Noisy Communication Networks (RGC GRF, 2021-23, HK$0.8M, Hubert Chan)</li>
+                <li>Fast monitoring and stabilization of quantum communication links for high-performance quantum networks (RGC GRF, 2021-23, HK$0.9M, Giulio Chiribella)</li>
+                <li>Mechanized Local Type-Inference with Subtyping and Dependent Types (RGC GRF, 2021-23, HK$0.6M, Bruno Oliveira)</li>
+                <li>PERQ: Predicting, Explaining, and Rectifying Failed Questions in KB-QA Systems (HKU-TCL, 2021-23, HK$0.2M, Ben Kao)</li>
+                <li>Practical Post-Quantum Zero-Knowledge Proofs (RGC GRF, 2021-23, HK$0.7M, Allen Au)</li>
+                <li>Tactile Perception and Analysis for Digital Archaeology (URC Seed, 2021-23, HK$0.09M, Jia Pan)</li>
+                <li>Deep Learning of auto tagging for Cyber Crime Intelligence (URC Seed, 2021-22, HK$0.1M, Kam-Pui Chow)</li>
+                <li>Efficient Multi-head Attention Mechanism for Sequence Modelling (URC Seed, 2021-22, HK$0.2M, Lingpeng Kong)</li>
+                <li>GIVE : A Generic and Intelligent Service for Community Support (KEO, 2021-22, HK$0.2M, Reynold Cheng)</li>
+                <li>Keeping Distance (KEO, 2021-22, HK$0.1M, Hing-Fung Ting)</li>
+                <li>On Large-Scale Transportation and Event Analytics (HKU-Engg, 2021-22, HK$0.6M, Reynold Cheng)</li>
+                <li>Decentralized Digital Identity Management System (URC Seed, 2021, HK$0.9M, John Yuen)</li>
+                <li>Whole-body Landmark Trajectory and Motion Prediction: Accurate, Fast and Robust Neural Architecture Search for Video (URC Seed, 2021, HK$0.06M, Ping Luo)</li>
+            </ul>
+    </details>
+    <details name="reqs">
+        <summary>
+            <div>2020</div>
+            <div class="item">20 projects</div>
+            <div>Funding: HK$53.01M</div>
+        </summary>
+            <ul>
+                <li>Intelligent Robotics for Elderly Assistance in Hong Kong (RGC TRS, 2020-25, HK$43.3M, Wenping Wang)</li>
+                <li>Accelerating Distributed DNN Training through Fine-grained Communication and Computation Placement and Scheduling (RGC GRF, 2020-23, HK$0.8M, Chuan Wu)</li>
+                <li>Highly Accurate and Efficient Scene Understanding via Mixture of Neural Sub-Network Architecture Search (RGC ECS, 2020-23, HK$1.1M, Ping Luo)</li>
+                <li>On 3D Tooth Tracking and Reconstruction Using Consumer Cameras with Applications in Digital Orthodontics (RGC GRF, 2020-23, HK$0.6M, Wenping Wang)</li>
+                <li>Using Knowledge Graphs for Long-Tail Keyword Query Recommendation in Video Search (HKU-TCL, 2020-23, HK$1M, Reynold Cheng)</li>
+                <li>抗量子隐私保护密码方案的关键技术研究 (MRPO NSFC, 2020-23, HK$0.7M, Allen Au)</li>
+                <li>A data centric approach for constructing multiple sequence alignments (RGC GRF, 2020-22, HK$0.5M, Hing-Fung Ting)</li>
+                <li>Deep Learning-Driven Schedulers for Distributed Machine Learning Clusters (RGC GRF, 2020-22, HK$0.7M, Chuan Wu)</li>
+                <li>Effective Navigation in Dense Crowds: Getting Robot Unlost, Unfrozen, and Unobtrusive using Deep Reinforcement Learning (RGC GRF, 2020-22, HK$0.7M, Jia Pan)</li>
+                <li>Foundations for Dependently Typed Object-Oriented Languages (RGC GRF, 2020-22, HK$0.7M, Bruno Oliveira)</li>
+                <li>Self-Supervised Knowledge Distillation and Neural Architecture Search for Video Classification and Detection (HKU-TCL, 2020-22, HK$1M, Ping Luo)</li>
+                <li>Towards Blockchain-Enabled Post-Quantum Secure Data Sharing Platform (URC Seed, 2020-22, HK$0.2M, Allen Au)</li>
+                <li>Approximated and Competitive Selling with Partial Assignment (URC Seed, 2020-21, HK$0.07M, Hing-Fung Ting)</li>
+                <li>Cloud Appreciation: Imaging the Sky (KEO, 2020-21, HK$0.9M, Hing-Fung Ting)</li>
+                <li>Effective and Efficient Embedding Solutions for Uncertain Many-Graph Databases (URC Seed, 2020-21, HK$0.06M, Reynold Cheng)</li>
+                <li>Privacy-preserving Blockchain by Trusted Platform Module (URC Seed, 2020-21, HK$0.08M, John Yuen)</li>
+                <li>Security of Relativistic Quantum Cryptography (URC Seed, 2020-21, HK$0.2M, R. Ramanathan)</li>
+                <li>Cancer Mutation Detection using Single Molecule Sequencing (URC Seed, 2020, HK$0.05M, Ruibang Luo)</li>
+                <li>Evaluating Motif Discovery Queries on Large Graph Databases (URC Seed, 2020, HK$0.05M, Reynold Cheng)</li>
+                <li>Intelligent Robotics for Elderly Assistance in Hong Kong (URC Seed, 2020, HK$0.3M, Wenping Wang)</li>
+            </ul>
+    </details>
+    <details name="reqs">
+        <summary>
+            <div>2019</div>
+            <div class="item">20 projects</div>
+            <div>Funding: HK$8.99M</div>
+        </summary>
+            <ul>
+                <li>Fighting Disease Recurrence and Promoting Tissue Repair after Liver Transplantation: Translating Basic Discoveries to Clinical Excellence (RGC TRS, 2019-24, HK$1.1M, Tak-Wah Lam (Co-PI) )</li>
+                <li>Fully Online Matching (RGC GRF, 2019-23, HK$0.7M, Zhiyi Huang)</li>
+                <li>Next Generation Digital Camera Imaging: Human Centered Image Reconstruction, Enhancement and Evaluation (RGC RIF, 2019-23, HK$1M, Yizhou Yu (Co-PI))</li>
+                <li>A Computational Study on Tooth Alignment in Digital Orthodontics (RGC GRF, 2019-22, HK$0.7M, Wenping Wang )</li>
+                <li>Data-Driven Sketch Interfaces for Modeling Objects Characterized by Curvilinear Structures (RGC GRF, 2019-22, HK$0.7M, Yizhou Yu)</li>
+                <li>Multi-stage Big Data Analytics for Complex Systems : Methodologies and Applications (RGC CRF, 2019-22, HK$0.3M, Chuan Wu (Co-PI))</li>
+                <li>Self-Calibrating Photometric Stereo for Non-Lambertian Surfaces (RGC GRF, 2019-22, HK$0.5M, Kenneth Wong)</li>
+                <li>The Quantum Information Structure of Spacetime (QISS) (JTF, 2019-22, HK$1.3M, Giulio Chiribella)</li>
+                <li>Artificial Intelligence for Legal Services: Sentencing Wizard on Drug Trafficking (KEO, 2019-21, HK$0.2M, Ben Kao (Co-PC))</li>
+                <li>Digging the Past Together : International Public Engagement in Near Eastern Archaeological Research (KEO, 2019-21, HK$0.2M, Wenping Wang (Co-PC))</li>
+                <li>Efficient Neural Architecture Search for Human Instructional Video Generation and Editing (URC Seed, 2019-21, HK$0.2M, Ping Luo)</li>
+                <li>Fully-Decentralized and Near-Optimal Large-Scale Multi-Robot Collision Avoidance via Deep Learning (RGC GRF, 2019-21, HK$0.6M, Jia Pan)</li>
+                <li>Genuine multi-channel enhancements in quantum communication networks (URC Seed, 2019-21, HK$0.09M, Giulio Chiribella)</li>
+                <li>ML-Ada: An adaptive multiple sequence alignment tool enlightened by machine learning (URC Seed, 2019-21, HK$0.05M, Hing-Fung Ting)</li>
+                <li>Quantum sensor networks: optimized design, performance benchmarks, and cryptographic applications (RGC GRF, 2019-21, HK$0.7M, Giulio Chiribella)</li>
+                <li>A Cloud-backed Intelligent Walker for the Elderly (URC Seed, 2019-20, HK$0.2M, Chuan Wu)</li>
+                <li>Automated Analysis of Dark Web Threat Intelligence (URC Seed, 2019-20, HK$0.1M, Kam-Pui Chow)</li>
+                <li>Drone Programming and AI (KEO, 2019-20, HK$0.1M, Kenneth Wong)</li>
+                <li>Secure processing of encrypted cloud data (URC Seed, 2019-20, HK$0.2M, John Yuen)</li>
+                <li>Building the first Variant-Disease Association database base on millions of full-text biomedical literature: A deep learning approach (URC Seed, 2019, HK$0.05M, Ruibang Luo)</li>
+            </ul>
+    </details>
+    <details name="reqs">
+        <summary>
+            <div>2018</div>
+            <div class="item">18 projects</div>
+            <div>Funding: HK$8.74M</div>
+        </summary>
+            <ul>
+                <li>New​​Systems​ ​and​ ​Algorithms​​for​ ​Preserving​ ​Big-data​​Privacy​ ​in​ ​Clouds (RGC GRF, 2018-22, HK$0.5M, Heming Cui)</li>
+                <li>Private and I/O-Efficient Concurrent Data Structures and Parallel Algorithms (RGC GRF, 2018-22, HK$0.7M, Hubert Chan)</li>
+                <li>Theory of Quantum Communication With Indefinite Causal Order (Croucher, 2018-22, HK$2.7M, Giulio Chiribella)</li>
+                <li>An Artificial Neural Network-based discriminator for validating clinically significant genomic variants (RGC ECS, 2018-21, HK$0.6M, Ruibang Luo)</li>
+                <li>Real-Time Reconstruction of 3D Thin Structures with an RGBD Camera (RGC GRF, 2018-21, HK$0.7M, Wenping Wang)</li>
+                <li>Spectral Analysis and Optimization Problems in Directed Hypergraph Diffusion Processes (RGC GRF, 2018-21, HK$0.7M, Hubert Chan)</li>
+                <li>Accountable Privacy-Preserving Authentications: New Construction from Post-Quantum Cryptography (RGC ECS, 2018-20, HK$0.6M, Allen Au)</li>
+                <li>An Artificial Neural Network based SNP and InDel Caller for Third-Generation Sequencing Data (URC Seed, 2018-20, HK$0.2M, Ruibang Luo)</li>
+                <li>Dynamic Scheduling and Pricing of Geo-Distributed Big Data Analytics Jobs with Online Optimization and Online Learning (URC Seed, 2018-20, HK$0.08M, Chuan Wu)</li>
+                <li>Foundations for Polymorphic Delegation-Based Languages using Disjoint Intersection Types (RGC GRF, 2018-20, HK$0.7M, Bruno Oliveira)</li>
+                <li>Understanding Price of Anarchy via the Duality Framework (RGC GRF, 2018-20, HK$0.7M, Zhiyi Huang)</li>
+                <li>Bioinformatics Algorithms and Next-Generation-Sequencing (NGS) Data Analysis, Faculty-KEA, 2018-19, HK$0.1M, Tak-Wah Lam)</li>
+                <li>Detecting anomalous behavior for PLC-based systems using machine learning (URC Seed, 2018-19, HK$0.1M, Kam-Pui Chow)</li>
+                <li>Sketch-Based Object Modeling Using Deep Learning (URC Seed, 2018-19, HK$0.05M, Yizhou Yu)</li>
+                <li>Speeding up AI Tasks in the Device-Fog-Cloud Trichotomy (URC Seed, 2018-19, HK$0.1M, Francis Lau)</li>
+                <li>The Science and Engineering of Music (KEO, 2018-19, HK$0.09M, Francis Lau)</li>
+                <li>Using Meta-Structures for Long-Tail Web Query Recommendation (URC Seed, 2018-19, HK$0.06M, Reynold Cheng)</li>
+                <li>UGE: Effective, Adaptive, and Efficient Mining of Large Uncertain Graphs (URC Seed, 2018, HK$0.06M, Reynold Cheng)</li>
+            </ul>
+    </details>
+    <details name="reqs">
+        <summary>
+            <div>2017</div>
+            <div class="item">19 projects</div>
+            <div>Funding: HK$8.37M</div>
+        </summary>
+            <ul>
+                <li>Centre for Genomic Studies on Plant-Environment Interaction for Sustainable Agriculture and Food Security (RGC AoE, 2017-25, HK$0.2M, Siu-Ming Yiu (Co-PI))</li>
+                <li>3D Design Algorithms and Dexterous Robotic Sewing for Customized Garment Fabrication (NSFC/RGC, 2017-20, HK$0.6M, Jia Pan)</li>
+                <li>Compressed Quantum Dynamics: Storing, Programming, and Simulating Physical Processes with Minimum-Sized Quantum System (RGC GRF, 2017-20, HK$0.3M, Giulio Chiribella)</li>
+                <li>GAIA: Strengthening the Reliability of Datacenter Computing via Fast Distributed Consensus (RGC GRF, HK$0.5M, Heming Cui)</li>
+                <li>Investigations of Deep Convolutional Neural Networks, Recurrent Neural Networks, and Optimal Scheduling in Distributed Machine Learning Clusters (URC SEG, 2017-20, HK$0.9M, Chuan Wu)</li>
+                <li>Modeling 3D Free-Form Objects from a Single Image (RGC GRF, 2017-20, HK$0.7M, Wenping Wang)</li>
+                <li>Security and Privacy-enhancing Technologies for Cloud Storage of Big Data (RGC CRF, 2017-20, HK$1.1M, Siu-Ming Yiu (Co-PI))</li>
+                <li>The information-theoretic power of quantum causal structures (MPRO NSFC, 2017-20, HK$0.7M, Giulio Chiribella)</li>
+                <li>Algorithmic Studies of Network Function Virtualization Systems: Dynamic VNF Deployment, Scaling and Pricing (RGC GRF, 2017-19, HK$0.7M, Chuan Wu)</li>
+                <li>An IoT + Cloud Data Analytics Platform for Elderly Monitoring in Smart Homes (URC PTF, 2017-19, HK$0.9M, Chuan Wu)</li>
+                <li>Collaborative Mobile Robot Search and Evacuation (RGC GRF, 2017-19, HK$0.5M, Francis Lau)</li>
+                <li>Quantum-limited amplification and noise reduction in multimode Gaussian systems (URC Seed, 2017-19, HK$0.07M, Giulio Chiribella)</li>
+                <li>RapidPL: Semantic Modularity for Rapid Programming Language Implementation (RGC GRF, 2017-19, HK$0.7M, Bruno Oliveira)</li>
+                <li>IoT Security Evaluation Testbed (URC Seed, 2017-18, HK$0.1M, Kam-Pui Chow)</li>
+                <li>Managing Uncertainty of Heterogeneous Big Multimedia Data (URC Seed, 2017-18, HK$0.04M, Reynold Cheng)</li>
+                <li>Resource Management and Optimization in Cloud Computing Systems (MRPO NSFC, 2017-18, HK$0.2M, Chuan Wu)</li>
+                <li>The invisible ultra-violet (UV) radiation (KEO, 2017-18, HK$0.1M, Francis Lau)</li>
+                <li>Meeting two challenges in the research of multiple sequence alignment: Twilight zone and giant families (URC Seed, 2017, HK$0.04M, Hing-Fung Ting)</li>
+                <li>Probative value of digital evidence in digital forensic investigation (HKU-KCL, 2017, HK$0.02M, Kam-Pui Chow)</li>
+            </ul>
+    </details>
+    <details name="reqs">
+        <summary>
+            <div>2016</div>
+            <div class="item">23 projects</div>
+            <div>Funding: HK$19.12M</div>
+        </summary>
+            <ul>
+                <li>RepBox: Transparent State Machine Replication and its Applications (Croucher, 2016-21, HK$5M, Heming Cui)</li>
+                <li>Discovering and Querying Meta-Graphs in Large Heterogeneous Information Networks (RGC GRF, 2016-20, HK$0.7M, Reynold Cheng)</li>
+                <li>Energy-efficient quantum information processing (RGC GRF, 2016-20, HK$0.3M, Giulio Chiribella)</li>
+                <li>The Algorithmic and Information Theoretic Foundations of Bayesian Mechanism Design (RGC GRF, 2016-20, HK$0.7M, Zhiyi Huang)</li>
+                <li>Computation of Optimal Partitions with Capacity Constraints (RGC GRF, 2016-19, HK$0.7M, Wenping Wang)</li>
+                <li>FALCON: Modeling, Detecting, and Defending against Concurrency Attacks (RGC ECS, 2016-19, HK$0.6M, Heming Cui)</li>
+                <li>Group Traveling Salesman Problems and Network Connectivity Problems on Fully Dynamic Metric Spaces with Bounded Growth (RGC GRF, 2016-19, HK$0.7M, Hubert Chan)</li>
+                <li>Modeling of Anisotropic Porous Structures (MPRO NSFC, 2016-19, HK$0.7M, Wenping Wang)</li>
+                <li>Problems, Solutions, and Optimization for Modern Clouds (RGC CRF, 2016-19, HK$4.5M, Francis Lau)</li>
+                <li>Quantum Causal Structures (JTF, 2016-19, HK$2M, Giulio Chiribella)</li>
+                <li>TAQA: An Open Knowledge-based Question-Answering System for Answering Questions with Complex Semantics Constraints (RGC GRF, 2016-19, HK$0.6M, Ben Kao)</li>
+                <li>The Observer Observed : a Bayesian Route to the Reconstruction of Quantum Theory (FQXi Fund, 2016-19, HK$0.9M, Giulio Chiribella)</li>
+                <li>Dynamic Algorithms for Connectivity and Densest Subgraph Problems (URC Seed, 2016-18, HK$0.05M, Hubert Chan)</li>
+                <li>FunJ: Improving JVM Compilation of Functional Programs using Imperative Functional Objects (URC Seed, 2016-18, HK$0.05M, Bruno Oliveira)</li>
+                <li>New Frontiers of the Online Primal Dual Technique: Convex Programs and Limitations of the Canonical Approach (RGC GRF, 2016-18, HK$0.5M, Zhiyi Huang)</li>
+                <li>Optimal manipulations of quantum resources for precision measurements and control (URC Seed, 2016-18, HK$0.2M, Giulio Chiribella)</li>
+                <li>Pricing Dynamic Cloud Resource Provisioning and Scaling via Auctions (RGC GRF, 2016-18, HK$0.5M, Chuan Wu)</li>
+                <li>Scalable, Effective and Privacy-Aware Location-based Services for Big Traffic Data (URC Seed, 2016-18, HK$0.1M, Reynold Cheng)</li>
+                <li>Earthquake in Hong Kong? (KEO, 2016-17, HK$0.1M, Francis Lau)</li>
+                <li>LAPS: A Scalable Location-Aware Publish/Subscribe System (URC Seed, 2016-17, HK$0.03M, Reynold Cheng)</li>
+                <li>Secure schemes for data storage and processing in clouds (URC Seed, 2016-17, HK$0.05M, Siu-Ming Yiu)</li>
+                <li>SPEAR – Special Portable Extendible Attack Research Unit (URC Seed, 2016-17, HK$0.1M, Kam-Pui Chow)</li>
+                <li>The study and development of methods for improving multiple sequence alignment (URC Seed, 2016, HK$0.04M, Hing-Fung Ting)</li>
+            </ul>
+    </details>
+    <details name="reqs">
+        <summary>
+            <div>2015</div>
+            <div class="item">14 projects</div>
+            <div>Funding: HK$5.06M</div>
+        </summary>
+            <ul>
+                <li>Primal-Dual Mathematical Programming Methods for Online Matching Problems with Generalized Constraints (RGC GRF, 2015-19, HK$0.5M, Hubert Chan)</li>
+                <li>Efficient Query Algorithms for Uncertain Graph Databases (RGC GRF, 2015-18, HK$0.5M, Reynold Cheng)</li>
+                <li>Learning from Demonstrations for Robotic Manipulation of Deformable Objects (RGC GRF, 2015-18, HK$0.4M, Jia Pan)</li>
+                <li>Semantics-Aware Digital Photo Editing and Enhancement (RGC GRF, 2015-18, HK$0.9M, Yizhou Yu)</li>
+                <li>Sketch-Based Surface Modeling with Control on Lines of Curvature (RGC GRF, 2015-18, HK$0.7M, Wenping Wang)</li>
+                <li>ALGEBRA: A Programming Language for Developing Software Product Lines based on Object Algebras (RGC ECS, 2015-17, HK$0.7M, Bruno Oliveira)</li>
+                <li>Oblivious Matching Algorithms on Unknown (Hyper) Graphs (RGC GRF, 2015-17, HK$0.9M, Hubert Chan)</li>
+                <li>OWL: Automatically Identifying and Avoiding Concurrency Attacks (URC Seed, 2015-17, HK$0.1M, Heming Cui)</li>
+                <li>High-Efficiency Resource Provisioning in Clouds (URC Seed, 2015-16, HK$0.1M, Francis Lau)</li>
+                <li>Managing Crowdsourced Databases: A Probabilistic Approach (URC Seed, 2015-16, HK$0.04M, Reynold Cheng)</li>
+                <li>Programming creations for schools (KEO, 2015-16, HK$0.04M, Francis Lau)</li>
+                <li>Security and privacy in genomic data (URC Seed, 2015-16, HK$0.04M, Siu-Ming Yiu)</li>
+                <li>Algorithms for Online Scheduling and Routing of Coflows (URC Seed, 2015, HK$0.04M, Francis Lau)</li>
+                <li>Real-time and Reliable Motion Planning for Humanoid Robots (URC Seed, 2015, HK$0.1M, Jia Pan)</li>
+            </ul>
+    </details>
+    <details name="reqs">
+        <summary>
+            <div>2014</div>
+            <div class="item">18 projects</div>
+            <div>Funding: HK$5.58M</div>
+        </summary>
+            <ul>
+                <li>New Methods for 3D Packing of Irregular Objects (RGC GRF, 2014-17, HK$0.9M, Wenping Wang)</li>
+                <li>Privacy-Preserving Mechanisms in Economic Markets (RGC ECS, 2014-17, HK$0.9M, Zhiyi Huang)</li>
+                <li>Research problems on carving and tamper detection of fragmented multimedia evidence for forensic investigation (NSFC/RGC, 2014-17, HK$1.1M, Siu-Ming Yiu)</li>
+                <li>A Fixed Viewpoint Approach for Shape from Refraction (RGC GRF, 2014-16, HK$0.6M, Kenneth Wong)</li>
+                <li>A new Programming Language for Type-Safe Modularity (URC Seed, 2014-16, HK$0.1M, Bruno Oliveira)</li>
+                <li>Classification Driven Levelsets for Interactive Image and Video Segmentation (RGC GRF, 2014-16, HK$0.6M, Yizhou Yu)</li>
+                <li>Models and Algorithms for Optimal Allocation Rules in Choice Problems (URC Seed, 2014-16, HK$0.05M, Hubert Chan)</li>
+                <li>Privacy-Preserving Algorithms for Combinatorial Optimization Problems (URC Seed, 2014-16, HK$0.1M, Zhiyi Huang)</li>
+                <li>The Economics of Federated Multi-Provider Clouds: Pricing, Exchanges and Job Scheduling (RGC GRF, 2014-16, HK$0.6M, Chuan Wu)</li>
+                <li>A Systematic Approach for Online Auction Fraud Detection (URC Seed, 2014-15, HK$0.1M, Kam-Pui Chow)</li>
+                <li>Automated Item Picking for Warehousing (URC Seed, 2014-15, HK$0.1M, Jia Pan)</li>
+                <li>CRISIS -Critical Infrastructure Incident Simulator (KEO, 2014-15, HK$0.1M, Kam-Pui Chow)</li>
+                <li>Effective Noise Removal Algorithms for Ambiguous Databases (URC Seed, 2014-15, HK$0.05M, Reynold Cheng)</li>
+                <li>Graph connectivity problems for modern applications (URC Seed, 2014-15, HK$0.05M, Francis Chin)</li>
+                <li>Leakage resilient lattice-based cryptographic schemes (URC Seed, 2014-15, HK$0.05M, Siu-Ming Yiu)</li>
+                <li>Sea Level Measurement Device for Everyone (KEO, 2014-15, HK$0.09M, Francis Lau)</li>
+                <li>Fast Distributed Algorithms for Information Dissemination in Multi-channel Radio Networks (URC Seed, 2014, HK$0.04M, Francis Lau)</li>
+                <li>Robotics in Daily Life (KEO, 2014, HK$0.05M, Francis Chin)</li>
+            </ul>
+    </details>
+    <details name="reqs">
+        <summary>
+            <div>2013</div>
+            <div class="item">10 projects</div>
+            <div>Funding: HK$3.68M</div>
+        </summary>
+            <ul>
+                <li>Online Strategy for Maximizing Sellers Revenue (RGC GRF, 2013-17, HK$0.5M, Francis Chin)</li>
+                <li>Continuous Discriminant Latent Topic Model (CD-LTM) for Facial Expression Recognition and Generation (RGC GRF, 2013-16, HK$0.7M, Kwok-Ping Chan)</li>
+                <li>Shape-preserving mesh and its computation (MPRO NSFC, 2013-16, HK$0.8M, Wenping Wang)</li>
+                <li>Studies on Medial Axis Surfaces for 3D Shape Modeling and Analysis (RGC GRF, 2013-16, HK$0.8M, Wenping Wang)</li>
+                <li>Multiphase Implicit Functions for Geometric Modeling of Heterogeneous Volume Objects (RGC GRF, 2013-15, HK$0.5M, Yizhou Yu)</li>
+                <li>Reconstruction of mirror surfaces from uncalibrated camera (URC SP, 2013-15, HK$0.08M, Kenneth Wong)</li>
+                <li>Photometric Stereo under Near-Light with Attenuation (URC SP, 2013-14, HK$0.07M, Dirk Schnieders)</li>
+                <li>Query-efficient representations of uncertain graphs (URC Seed, 2013-14, HK$0.08M, Reynold Cheng)</li>
+                <li>Software protection in smart meters (URC Seed, 2013-14, HK$0.05M, Siu-Ming Yiu)</li>
+                <li>Tracking and visualizing mitral valve in 3D echocardiography (URC Seed, 2013-14, HK$0.1M, Kenneth Wong)</li>
+            </ul>
+    </details>
+    <details name="reqs">
+        <summary>
+            <div>2012</div>
+            <div class="item">7 projects</div>
+            <div>Funding: HK$3.9M</div>
+        </summary>
+            <ul>
+                <li>Design and analysis of algorithms for online bin packing: Old challenges and new opportunities (RGC GRF, 2012-16, HK$0.7M, Hing-Fung Ting)</li>
+                <li>Dynamic Predictive Algorithms for Seamless Scaling of Social Media Applications in Multi-Provider Clo</li>
+                <li>Privacy-Preserving Mechanisms on Multi-User Data in Ubiquitous Computing Environments (RGC ECS, 2012-16, HK$0.6M, Hubert Chan)</li>
+                <li>Free-Form Shape Modeling Using Cyclides (RGC GRF, 2012-15, HK$0.9M, Wenping Wang)</li>
+                <li>Next-Generation Sequencing Algorithms (RGC GRF, 2012-15, HK$0.9M, Francis Chin)</li>
+                <li>Resource Searching and Diversified Tag Recommendation in Social Tagging Systems (RGC GRF, 2012-15, HK$0.5M, Ben Kao)</li>
+                <li>新一代基因测序技术的算法研究 (MRPO - Shenzhen Fund, 2012-14, HK$0.3M, Francis Chin)</li>
+            </ul>
+    </details>
+
+</body>
+</html>
