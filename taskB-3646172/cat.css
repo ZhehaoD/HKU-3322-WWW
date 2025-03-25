@@ -1,0 +1,112 @@
+div{
+    width: 960px;
+    border:gray dashed 3px;
+    border-radius: 30px;
+    margin-top: 50px;
+    padding: 20px;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+h1{
+    font-family: Ubuntu;
+    text-align: center;
+}
+
+
+p{
+    font-family: Lora;
+}
+
+h1 + p {
+    text-align: right;
+    font-size: 120%;
+    font-style: italic;
+    font-weight: bold;
+    float:right;
+    margin: 0;
+}
+
+cite {
+    text-align: left;
+    font-family: papyrus;
+    font-size: 120%;
+    float:left;
+}
+
+
+cite a::after {
+    content: " (" attr(href) ")";
+}
+
+cite a, cite a::after{
+    color: black;
+    text-decoration: none;
+}
+
+cite a:hover, cite a:hover:after{
+    text-decoration: underline;
+    text-decoration-color: blue;
+    text-decoration-style: wavy;
+    background-color: greenyellow;
+}
+
+h1~p::first-line {
+    font-weight: bold;
+}
+
+cite + p{
+    margin-top: 0px;
+    padding-top: 24px;
+    margin-bottom: 24px;
+    clear: both;
+}
+
+cite + p::before{
+    content: url('three_kittens.jpg');
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: scale(0.5) translate(-50%, -50%);
+    clip-path: inset(0% round 30px);
+}
+
+cite + p + p{
+    position: relative;
+    left: 104.792px;
+    margin-bottom: 24px;
+}
+
+cite + p + p::before{
+    content: url('kittens_wear_mittens.jpg');
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: scale(0.5) translate(-10%, -50%);
+    clip-path: ellipse(50% 40% at 50% 50%);
+}
+
+cite + p + p +p {
+    position: relative;
+    left:292.9805px;
+    margin-bottom: 24px;
+}
+
+cite + p + p + p + p::before{
+    content: url('kitten_rat.jpg');
+    float:left;
+    transform: scale(0.8) translate(10%, -10%);
+    clip-path: inset(0% 15% 0% 0% round 0px 80px);
+}
+
+cite + p + p + p + p {
+    background-image: url("hanging_mittens.png");
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position-y: top;
+    background-position-x: right;
+    position: relative;
+    left:122.998px;
+    width:765.667px;
+    text-align: left;
+}
