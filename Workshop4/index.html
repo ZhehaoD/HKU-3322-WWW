@@ -43,7 +43,12 @@
     <script>
     // Task 2.2 - to be implemented
     function addstudent() {
-    
+      let sname = document.getElementById("newname")
+      if (sname.validity.valueMissing) {
+        alert("Missing student name!!");
+        sname.focus();
+        return;
+        }
     }
     
     // Task 4.1 - to be implemented
@@ -81,7 +86,24 @@
 
     // Task 2.2 - to be implemented
     function filterM() {
-    
+      var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+          if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+          var mesgs = document.getElementById("entries");
+          mesgs.innerHTML = xmlhttp.responseText;
+          }
+        }
+        xmlhttp.open("POST", "queryEntries.php", true);
+        xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xmlhttp.send("show=major&bymajor="+document.getElementById("major").value);
+        xmlhttp.onreadystatechange = function () {
+          if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            var mesgs = document.getElementById("entries");
+            mesgs.innerHTML = xmlhttp.responseText;
+            document.getElementById("major").value = "";
+            }
+          }
+          btn_all.style.display = "block";
     }
 
     // Task 2.2 - to be implemented
@@ -94,6 +116,9 @@
     }
     var btn_all=document.getElementById("button_all");
     btn_all.addEventListener('click',showAll);
+    document.getElementById("majBtn").addEventListener('click',filterM);
+    document.getElementById("cBtn").addEventListener('click', filterC);
+    xmlhttp.send("show=course&bycourse="+document.getElementById("course").value);
     </script>
 
   </body>
