@@ -1,0 +1,115 @@
+const express = require('express');
+const app = express();
+const mongoose = require('mongoose');
+
+mongoose.connect('mongodb://mongodb/DailyFlow')
+  .then(() => {
+    console.log("Connected to MongoDB");
+  })
+  .catch(err => {
+    console.log("MongoDB connection error: " + err);
+  });
+
+var mySchema = new mongoose.Schema({
+  Date: String,
+  Flow: String,
+  Local: Number,
+  Mainland: Number,
+  Others: Number,
+}, { versionKey: false });
+
+const Daylog = mongoose.model('Daylog', mySchema, 'daylog');
+
+app.get('/data', async (req, res) => {
+  try {
+    const data = await Daylog.find({});
+    res.json(data);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+});
+
+app.get('/HKPassenger/v1/data/:year/:month/:day', async (req, res) => {
+  try {
+    const { year, month, day } = req.params;
+    const numDays = parseInt(req.query.num);
+    const yearNum=parseInt(year);
+    const monthNum=parseInt(month);
+    const dayNum=parseInt(day);
+    if (isNaN(yearNum) || yearNum < 2021 || yearNum > 2025) {
+      return res.status(400).json({
+        error: 'Wrong year input - must be a number between 2021 - 2025.'
+      });
+    }
+    if (isNaN(monthNum) || monthNum < 1 || monthNum > 12) {
+      return res.status(400).json({
+        error: 'Wrong month input - must be a number between 1 - 12.'
+      });
+    }
+    if (isNaN(dayNum) || dayNum < 1 || dayNum > 31) {
+      return res.status(400).json({
+        error: 'Wrong date input - must be a number between 1 - 31.'
+      });
+    }
+
+    if (numDays < 1) {
+      return res.status(400).json({
+        error: '"Wrong query string num - must be a number greater than zero.'
+      });
+    }
+
+    const inputDate = new Date(yearNum, monthNum - 1, dayNum);
+    if (isNaN(inputDate.getTime()) ||
+      inputDate.getFullYear()!== yearNum ||
+      inputDate.getMonth()!== monthNum - 1 ||
+      inputDate.getDate()!== dayNum) {
+      const invalidDateStr = `${day}/${month}/${year}`;
+      return res.status(400).json({
+        error: `${invalidDateStr} is not a valid calendar date!`
+      });
+    }
+
+    if (isNaN(numDays) || numDays <= 0) {
+      const targetDate = `${month}/${day}/${year}`;
+      const data = await Daylog.find({ Date: targetDate });
+
+      if (data.length === 0) {
+        return res.status(404).json({ message: 'No data found for the specified date.' });
+      }
+
+      res.json(data);
+    } else {
+      const startDate = new Date(`${year}-${month}-${day}`);
+      const endDate = new Date(startDate);
+      endDate.setDate(endDate.getDate() + numDays - 1);
+      const currDate = new Date(startDate);
+      const allData = [];
+      while (currDate <= endDate) {
+        const currFormatted = formatDate(currDate);
+        console.log(currDate,endDate,currFormatted);
+        const data = await Daylog.find({ Date: currFormatted });
+        allData.push(...data);
+        currDate.setDate(currDate.getDate() + 1);
+      }
+
+      res.json(allData);
+    }
+  } catch (error) {
+    console.error('Error retrieving passenger flow data:', error);
+    res.status(500).json({ message: 'Internal server error' });
+  }
+});
+
+function formatDate(date) {
+  const month = String(date.getMonth() + 1);
+  const day = String(date.getDate());
+  const year = date.getFullYear();
+  return `${month}/${day}/${year}`;
+}
+
+app.use(express.static('public'));
+
+app.listen(8080, () => {
+  console.log('ASS4 App listening on port 8080!');
+});

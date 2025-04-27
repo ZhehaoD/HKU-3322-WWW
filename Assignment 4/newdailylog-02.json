@@ -1,0 +1,6 @@
+{
+  "4/4/2025": [{"Flow":"Arrival","Local":380754,"Mainland":178968,"Others":42504},
+               {"Flow":"Departure","Local":489527,"Mainland":145048,"Others":36953}],
+  "4/5/2025": [{"Flow":"Arrival","Local":375885,"Mainland":128414,"Others":37195},
+               {"Flow":"Departure","Local":330011,"Mainland":137916,"Others":40603}]
+}

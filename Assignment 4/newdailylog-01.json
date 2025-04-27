@@ -1,0 +1,8 @@
+{
+  "4/1/2025": [{"Flow":"Arrival","Local":247539,"Mainland":65342,"Others":30822},
+               {"Flow":"Departure","Local":266275,"Mainland":70115,"Others":32814}],
+  "4/2/2025": [{"Flow":"Arrival","Local":247677,"Mainland":65969,"Others":35066},
+               {"Flow":"Departure","Local":298934,"Mainland":67121,"Others":30211}],
+  "4/3/2025": [{"Flow":"Arrival","Local":253669,"Mainland":79434,"Others":38954},
+               {"Flow":"Departure","Local":514166,"Mainland":76712,"Others":30454}]
+}

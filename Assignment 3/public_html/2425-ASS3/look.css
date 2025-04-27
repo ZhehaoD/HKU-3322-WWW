@@ -1,0 +1,184 @@
+#head{
+    text-align: center;
+    margin-left:50px;
+    margin-right:50px;
+    padding:10px;
+    background-color:rgb(231, 215, 248);
+    border-radius: 15px;
+}
+
+p{
+    margin-bottom:21.440px;
+}
+
+a{
+    color:black;
+    text-decoration:none;
+}
+
+#form {
+    width: 300px;
+    margin: 50px auto 15px auto;
+    border: 3px solid #ccc;
+    padding: 30px 30px 15px 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+input[id="username"]:focus {
+    border: 2px solid blue;
+    box-shadow: 0 0 5px 5px rgba(0, 123, 255, 0.2);
+}
+
+input[id="username"]{   
+    padding: 8px;
+    margin-bottom: 15px;
+    margin-left:20px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+input[id="password"]:focus {
+    border: 2px solid blue;
+    box-shadow: 0 0 5px 5px rgba(0, 123, 255, 0.2);
+}
+
+input[id="password"] {   
+    padding: 8px;
+    margin-bottom: 15px;
+    margin-left:23px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+button[id="Log in"]{
+    padding:10px 30px;
+    background-color:#ccc;
+    border-radius: 5px;
+    margin-top:15px;
+}
+
+#loginHeader {
+    font-size:17px;
+    position: absolute;
+    transform: translate(-20px,-50px);
+    background-color: white;
+    border: 1px solid white;
+}
+
+#loginHeader::first-letter {
+    font-size: 25px;
+}
+
+#erroruser{
+    color: red;
+    background-color: yellow;
+    display: inline-block;
+    transform: translateX(-125px);
+}
+
+#errorpassword{
+    color: red;
+    background-color: yellow;
+    display: inline-block;
+    transform: translateX(-100px);
+}
+
+#error{
+    color: red;
+    background-color: yellow;
+    display: inline-block;
+    transform: translateX(-120px);
+}
+
+#login{
+    text-align: center;
+}
+
+.error-tooltip {
+    position: absolute;
+    transform: translate(111px,-15px);
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+#Search{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#SearchLable{
+    margin-left: 100px;
+}
+
+input[id="Search"] {
+    width: 400px;
+    padding: 8px;
+    margin-bottom: 15px;
+    margin-left:10px;
+    border: 3px solid #ccc;
+    border-radius: 40px;
+    outline: none;
+}
+
+button[id="btn"]{
+    width: 70px;
+    height: 30px;
+    margin-left: 100px;
+    border: 1px solid white; 
+    border-radius: 5px; 
+    background-color: #d8d1d1; 
+}
+  
+#TopEight{
+    margin-left: 80px;
+}
+
+#song-card{
+    margin: 15px 50px 15px 0px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(216, 241, 251);
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+
+#song-info{
+    width:450px;
+    margin-left:30px;
+}
+
+#song-title{
+    margin:5px 0px 15px 0px;
+}
+
+#song-author{
+    margin:0px 0px 5px 0px;
+}
+
+#song-length{
+    width:50px;
+    margin-right: 30px;
+}
+
+#imges img{
+    top:50px;
+    left:10px;
+}
+
+#count{
+    font-size: 15px;
+    width: 20px;
+    height: 16px;
+    transform: translate(0px,5px);
+}
+
+#Tags{
+    margin-left: 50px;
+}
